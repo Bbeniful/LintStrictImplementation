@@ -15,8 +15,8 @@ import com.bbeniful.linterem.ui.theme.LinteremTheme
 
 class MainActivity : ComponentActivity() {
 
-    val mVariable = 1
-    val variable = 1
+    private val mVariable = 1
+    private val variable = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
             LinteremTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Android $mVariable $variable",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

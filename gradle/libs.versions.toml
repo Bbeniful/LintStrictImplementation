@@ -11,6 +11,8 @@ lifecycleRuntimeKtx = "2.8.4"
 activityCompose = "1.9.1"
 composeBom = "2024.04.01"
 jetbrainsKotlinJvm = "1.9.0"
+lintApi = "31.6.0"
+lintChecks = "31.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,6 +31,8 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+lint-api = { module = "com.android.tools.lint:lint-api", version.ref = "lintApi" }
+lint-checks = { module = "com.android.tools.lint:lint-checks", version.ref = "lintChecks" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

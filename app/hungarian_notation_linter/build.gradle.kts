@@ -4,8 +4,8 @@ plugins {
 }
 
 dependencies {
-    implementation("com.android.tools.lint:lint-api:31.6.0")    // Adjust version as needed
-    implementation("com.android.tools.lint:lint-checks:31.6.0")
+    implementation(libs.lint.api)
+    implementation(libs.lint.checks)
 }
 
 java {
